@@ -1,0 +1,223 @@
+using System;
+using System.Diagnostics;
+using System.Threading;
+using Telegram.Bot;
+using Telegram.Bot.Types;
+using Telegram.Bot.Types.InputFiles;
+
+namespace bot
+{
+    class Programm
+    {
+        static void Main(string[] args)
+        {
+            var client = new TelegramBotClient("6205815974:AAEdIdBL0luw2HaMvgUvxZk9fVflYKztf3w");
+            client.StartReceiving(Update, Error);
+
+            Console.ReadLine();
+        }
+
+        async static Task Update(ITelegramBotClient botClient, Update update, CancellationToken token)
+        {
+            var message = update.Message;
+            if (message != null)
+            {
+                if (message.Text.ToLower() == "1")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл1.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл1.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "2")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл2.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл2.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "3")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл3.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл3.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "4")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл4.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл4.txt"));
+                }
+
+                if (message.Text.ToLower() == "5")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл5.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл5.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "6")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл6.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл6.txt"));
+                }
+
+                if (message.Text.ToLower() == "7")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл7.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл7.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "7")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл7.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл7.txt"));
+                }
+
+                if (message.Text.ToLower() == "8")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл8.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл8.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "9")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл9.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл9.txt"));
+                }
+
+                if (message.Text.ToLower() == "10")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл10.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл10.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "11")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл11.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл11.txt"));
+                }
+
+                if (message.Text.ToLower() == "12")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл12.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл12.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "13")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл13.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл13.txt"));
+                }
+
+                if (message.Text.ToLower() == "14")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл14.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл14.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "15")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл15.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл15.txt"));
+                }
+
+                if (message.Text.ToLower() == "16")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл16.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл16.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "17")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл17.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл17.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "18")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл18.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл18.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "19")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл19.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл19.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "20")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл120.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл20.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "21")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл21.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл21.txt"));
+                }
+
+                if (message.Text.ToLower() == "22")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл22.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл22.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "23")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл23.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл23.txt"));
+                }
+
+                if (message.Text.ToLower() == "24")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл24.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл24.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "25")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл25.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл25.txt"));
+                }
+
+                if (message.Text.ToLower() == "26")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл26.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл26.txt"));
+                }
+
+
+                if (message.Text.ToLower() == "27")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("гл27.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "гл27.txt"));
+                }
+
+                if (message.Text.ToLower() == "шпак" || message.Text.ToLower() == "Шпак")
+                {
+                    await using Stream stream = System.IO.File.OpenRead("шп.txt");
+                    await botClient.SendDocumentAsync(message.Chat.Id, new InputOnlineFile(stream, "шп.txt"));
+                }
+            }
+        }
+
+        private static Task Error(ITelegramBotClient arg1, Exception arg2, CancellationToken arg3)
+        {
+            throw new NotImplementedException();
+        }//обработчик ошибок
+    }
+}
